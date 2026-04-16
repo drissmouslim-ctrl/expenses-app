@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Support des safe areas iPhone */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .pb-safe {
+    padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+  }
+}
+
+/* Éviter le zoom sur les inputs iOS */
+input[type='text'],
+input[type='number'],
+input[type='date'],
+select,
+textarea {
+  font-size: 16px;
+}
+
+/* Scroll natif fluide */
+html {
+  -webkit-overflow-scrolling: touch;
+}
