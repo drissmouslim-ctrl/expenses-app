@@ -3,7 +3,11 @@
     "allow": [
       "Bash(npm install *)",
       "Bash(npm run *)",
-      "Bash(node scripts/generate-icons.mjs)"
+      "Bash(node scripts/generate-icons.mjs)",
+      "Bash(vercel *)",
+      "Bash(cp -r \"C:/Users/driss/Desktop/Test Claude/expenses/src/app/\\(app\\)\" \"C:/Users/driss/Desktop/Test Claude/expenses/src/app/\\(protected\\)\")",
+      "Bash(rm -rf \"C:/Users/driss/Desktop/Test Claude/expenses/src/app/\\(app\\)\")",
+      "Bash(rm *)"
     ]
   }
 }
