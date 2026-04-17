@@ -8,7 +8,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'PIN manquant' }, { status: 400 })
   }
 
-  const expectedPin = process.env.NEXT_PUBLIC_APP_PIN
+  const expectedPin = '1234' // TODO: restore → process.env.NEXT_PUBLIC_APP_PIN
   if (pin !== expectedPin) {
     return NextResponse.json({ error: 'PIN incorrect' }, { status: 401 })
   }
